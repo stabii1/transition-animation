@@ -22,24 +22,31 @@ a {
 }
 
 a:hover {
-
+  background-color: forest-green;
+  font-size: 46px;
 }
 
 .one {
-
+  transition-property: background-color;
+  transition-duration: 2s;
 }
 
 .two {
-
+  transition-property: background-color;
+  transition-duration: 400ms;
 }
 
-.three {
-
+.three {  
+  transition-property: background-color;
+  transition-duration: 400ms;
+  transition-timing-function: ease-out;
+  transition-delay: 200ms;
 }
 
 .four {
+  transition-property: background-color 400ms ease-out 200ms, font-size 800ms linear 100ms;
 }
 
 .five {
-
+  transition-property: all 400ms ease-out 200ms;
 }
